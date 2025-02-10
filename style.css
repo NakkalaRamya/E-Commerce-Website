@@ -1,0 +1,1030 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Great+Vibes&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Great+Vibes&family=Oleo+Script&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+ 
+html{
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: row;
+
+}
+
+.video{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  bottom: 0;
+  z-index: -10;
+  right: 0;
+
+}
+
+.header{
+    width: 100%;
+    height: 10vh;
+    padding: 1rem;
+    z-index: 1000000;
+    background:white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+}
+
+
+
+.logo {
+  width: 100px; 
+  height: 70px;
+
+  
+}
+
+.header a{
+  color: black;
+  font-size: 18px;
+  padding-left: 30px;
+  padding-right: 25px;
+  align-items: left;
+  font-family: 'Oleo Script', cursive;
+  font-weight: lighter;
+  width:  200px;
+}
+
+
+.nav {
+
+  padding: 10px; 
+}
+
+.nav ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+
+.Search {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+.search-wrapper {
+  display: inline-block; 
+  background-color: #f0f0f0; 
+  border-radius: 4px;  
+  padding: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.search-bar {
+  padding: 10px; 
+  border: none; 
+  background-color: transparent; 
+  width: 150px; 
+  outline: none; 
+  font-size: 16px; 
+  margin: 0; 
+}
+
+.button-search {
+  padding: 10px 20px; 
+  background-color: #007bff; 
+  color: #fff; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  outline: none; 
+  margin: 0; 
+}
+
+.button1 {
+  width: 15px; 
+  height: 20px; 
+  vertical-align: middle; 
+  margin-right: 5px; 
+}
+
+
+
+
+
+.icons{
+ width: 200px; 
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding-left: 15px;
+ margin-left: 20px;
+ gap: 1px;
+
+}
+
+.favourite{
+  width: 40px;
+  height: 30px;
+
+  
+}
+
+.shopping-cart{
+  width: 30px;
+  height: 30px;
+  
+}
+ 
+.login{
+  width: 30px;
+  height: 40px;
+  
+}
+
+.favouritee{
+  width: 25rem;
+  height: 15rem;
+  background-color: black;
+  color: pink;
+  font-size: 1rem;
+  line-height: 4rem;
+  z-index: 100000;
+  border: 2px solid white;
+  display: flex;
+  transition: 1s;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 10%;
+  right: -95%;
+  border-radius: 2rem;
+  padding: 2rem;
+  
+}
+
+.favouritee.active{
+  right: 5%;
+}
+
+.shoppingbag{
+  width: 40rem;
+  height: 40rem;
+  background: black;
+  border:2px solid white;
+  border-radius: 2rem;
+  position: fixed;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  top: 10%;
+  right: -95%;
+  z-index: 100000;
+}
+
+.checkbox{
+  width: 90%;
+  height: 20%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem;
+}
+
+.checkbox h2{
+  text-align: center;
+  width: 48%;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.checkbox p{
+  font-size: 2rem;
+}
+
+.checkbox img{
+  width: 15%;
+  height: 100%;
+}
+
+.shoppingbag.active{
+  right: 5%;
+}
+
+.log{
+  width: 60px;
+  height: 30px;
+  color: palevioletred;
+}
+
+.sign{
+  width: 60px;
+  height: 30px;
+  color: palevioletred;
+}
+
+.maintext{
+  width: 95%;
+  height: 90vh;
+  background-color: transparent;
+  position: absolute;
+  top: 10%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+} 
+
+.leftside{
+  width: 40%;
+  height: 100%;
+  background: transparent;
+  display:flex;
+  font-family: 'Great Vibes', cursive;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  padding: 1rem;
+}
+
+.first{
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  height: 30%;
+  font-size: 5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+.rightside{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  overflow: hidden;
+}
+
+.imageright{
+  width: 100%;
+  height: 100%;
+}
+
+.second{
+  width: 100%;
+  height: 10%;
+  color: rgb(23, 21, 21);
+  background-color: whitesmoke;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 380px ;
+}
+
+.button{
+  width: 30%;
+  height: 6rem;
+  border-radius: 2rem;
+  background-color: rgb(223, 81, 81);
+  border: 2px solid whitesmoke;
+  font-family:'Great Vibes', cursive;
+  font-size: 2rem;
+  position: relative;
+  top: -300px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+
+
+
+
+.container2{
+  width: 100%;
+  height: auto;
+  background: black;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.heading{
+  color: white;
+  font-size: 5rem;
+  padding-top: 4rem;
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+}
+
+
+
+.Infant{
+  width: 100%;
+  height: auto;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Products{
+  width: 30rem;
+  height: 40rem;
+  background: rgb(101, 18, 18);
+  color: white;
+  display: flex;
+  margin: 4rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+  
+.top{
+  width: 100%;
+  height: 60%;
+  background: green;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.topimg{
+  width: 100%;
+  height: 100%;
+}
+
+.baby1{
+  width: 100%;
+    height: 100%;
+}
+
+.bottom{
+  width: 100%;
+  height: 45%;
+  background: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.bottom h2{
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.bottom h3{
+  font-size: 2.5rem;
+}
+
+
+.baby2 {
+  width: 100%;
+  height: 100%;
+  left: 2rem;
+}
+
+
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.Products:hover{
+  cursor: pointer;
+  background: blanchedalmond;
+  width: 32rem;
+  height: 42rem;
+  border: 2px solid white;
+}
+
+.heading2{
+  color: white;
+  font-size: 5rem;
+  padding-top: 4rem;
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+}
+
+.container3{
+  width: 100%;
+  height: auto;
+  background: black;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Kid{
+  width: 100%;
+  height: auto;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Products2{
+  width: 40rem;
+  height: 50rem;
+  background: rgb(101, 18, 18);
+  color: white;
+  display: flex;
+  margin: 4rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+ 
+.top2{
+  width: 100%;
+  height: 60%;
+  background: green;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.topimg{
+  width: 100%;
+  height: 100%;
+}
+
+.kid1{
+  width: 100%;
+    height: 100%;
+}
+
+.bottom2{
+  width: 100%;
+  height: 45%;
+  background: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+.bottom2 h2{
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.bottom2 h3{
+  font-size: 2.5rem;
+}
+
+.heading3{
+  color: white;
+  font-size: 5rem;
+  padding-top: 4rem;
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+}
+
+
+
+.container4{
+  width: 100%;
+  height: auto;
+  background: black;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.womens{
+  width: 100%;
+  height: auto;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Products3{
+  width: 40rem;
+  height: 50rem;
+  background: rgb(101, 18, 18);
+  color: white;
+  display: flex;
+  margin: 4rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.top3{
+  width: 100%;
+  height: 60%;
+  background: green;
+  align-items: center;
+  justify-content: center;
+
+}
+.topimg{
+  width: 100%;
+  height: 100%;
+}
+
+.women1{
+  width: 100%;
+    height: 100%;
+}
+
+.bottom3{
+  width: 100%;
+  height: 45%;
+  background: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+.bottom3 h2{
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.bottom3 h3{
+  font-size: 2.5rem;
+}
+.women2{
+  width: 100%;
+  height: 100%;
+}
+.heading4{
+  color: white;
+  font-size: 5rem;
+  padding-top: 4rem;
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+}
+
+.container5{
+  width: 100%;
+  height: auto;
+  background: black;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.Elderly-womens{
+  width: 100%;
+  height: auto;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Products4{
+  width: 30rem;
+  height: 40rem;
+  background: rgb(18, 18, 18);
+  color: white;
+  display: flex;
+  margin:4rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.top4{
+  width: 100%;
+  height: 60%;
+  background: rgb(8, 8, 8);
+  align-items: center;
+  justify-content: center;
+
+}
+
+topimg{
+  width: 100%;
+  height: 100%;
+}
+
+.old1{
+  width: 100%;
+  height: 100%;
+}
+
+.bottom4{
+  width: 100%;
+  height: 45%;
+  background: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+.bottom4 h2{
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.bottom4 h3{
+  font-size: 2.5rem;
+}
+
+.old2{
+  width: 100%;
+  height: 100%; 
+}
+
+.heading5{
+
+  color: white;
+  font-size: 5rem;
+  padding-top: 4rem;
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+}
+
+.container6{
+  width: 100%;
+  height: auto;
+  background: black;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.Beautyy{
+  width: 100%;
+  height: auto;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Products5{
+  width: 30rem;
+  height: 40rem;
+  background: rgb(18, 18, 18);
+  color: white;
+  display: flex;
+  margin:4rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.top5{
+  width: 100%;
+  height: 60%;
+  background: rgb(8, 8, 8);
+  align-items: center;
+  justify-content: center;
+
+}
+
+topimg{
+  width: 100%;
+  height: 100%;
+}
+
+.B1{
+  width: 100%;
+  height: 100%;
+}
+
+.bottom5{
+  width: 100%;
+  height: 45%;
+  background: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+.bottom5 h2{
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.bottom5 h3{
+  font-size: 2.5rem;
+}
+
+.B2{
+  width: 100%;
+  height: 100%; 
+}
+
+.heading6{
+  color: white;
+  font-size: 5rem;
+  padding-top: 4rem;
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+}
+
+.container7{
+  width: 100%;
+  height: auto;
+  background: black;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.Otherss{
+  width: 100%;
+  height: auto;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Products6{
+  width: 30rem;
+  height: 40rem;
+  background: rgb(18, 18, 18);
+  color: white;
+  display: flex;
+  margin:4rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.top6{
+  width: 100%;
+  height: 60%;
+  background: rgb(8, 8, 8);
+  align-items: center;
+  justify-content: center;
+
+}
+
+topimg{
+  width: 100%;
+  height: 100%;
+}
+
+.O1{
+  width: 100%;
+  height: 100%;
+}
+
+.bottom6{
+  width: 100%;
+  height: 45%;
+  background: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+.bottom6 h2{
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.bottom6 h3{
+  font-size: 2.5rem;
+}
+
+.O2{
+  width: 100%;
+  height: 100%;
+}
+
+.footer{
+  width: 100%;
+  height: 65vh;
+  background: black;
+}
+
+.upper{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lower h2{
+  margin-right: 1.5rem;
+}
+
+.lower{
+  width: 100%;
+  height: 20%;
+  border-top: 4px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  border-top: 4px solid white;
+}
+
+.images{
+  width: 100%;
+  text-align: center;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images img{
+  width: 15%;
+  height: 40%;
+  margin: 1rem;
+}
+
+
+#a{
+  margin-bottom: 2rem;
+  width: 25%;
+  height: 100%;
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.logo-a{
+  width: 150px;
+  height: 150px;
+}
+
+.iconsfooter{
+  width: 100%;
+  height: 90%;
+  background: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.input{
+  width: 95%;
+  height: 20%;
+  border-radius: 2rem;
+  border: 2px solid white;
+  color: black;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+#b p{
+   font-size: 1.9rem;
+   line-height: 2.7rem;
+}
+
+.loginn{
+  width: 30rem;
+  height: 30rem;
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  border: 2px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 10%;
+  right: -95%;
+  transition: 1s;
+  z-index: 100000;
+}
+
+#username{
+  width: 90%;
+  height: 20%;
+  background: black;
+  color: white;
+  padding: 2rem;
+  border: 2px solid white;
+  border-radius: 2rem;
+  font-size: 2rem;
+}
+
+#password{
+  width: 90%;
+  height: 20%;
+  background: black;
+  color: white;
+  padding: 2rem;
+  border: 2px solid white;
+  border-radius: 2rem;
+  font-size: 2rem;
+}
+
+.loginn a{
+  font-size: 1.5rem;
+  color: whitesmoke;
+  word-spacing: 0.7rem;
+}
+
+.loginn.active{
+  right: 5%;
+}
+
+@media (min-aspect-ratio:16/9){
+  .video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-aspect-ratio:16/9){
+  .video{
+    width: auto;
+    height: 100%;
+  }
+}
+
+

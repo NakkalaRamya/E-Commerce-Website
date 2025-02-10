@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up </title>
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+  background-color: #344a72;
+  font-family: "Roboto", sans-serif;
+}
+
+.signup-box {
+  width: 360px;
+  height: 620px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.login-box {
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+input[type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #49c1a2;
+  color: white;
+  font-size: 18px;
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+.para-2 {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-top: -10px;
+}
+.para-2 a {
+  color: #49c1a2;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      
+      <form>
+        <label>First Name</label>
+        <input type="text" placeholder="" />
+        <label>Last Name</label>
+        <input type="text" placeholder="" />
+        <label>Email</label>
+        <input type="email" placeholder="" />
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter your password" />
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm your password" />
+        <input type="button" value="Submit" href="Femme.html" onclick="validatePassword()" />
+        
+        
+      <closeform></closeform></form>
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="login.html">Login here</a>
+    </p>
+    
+
+    <script>
+      function validatePassword() {
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+    
+        // Password length check
+        if (password.length < 8) {
+          alert('Password must be at least 8 characters long.');
+          return;
+        }
+    
+        // Regular expressions for character types
+        const specialCharRegex = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/;
+        const uppercaseRegex = /[A-Z]/;
+        const numericRegex = /[0-9]/;
+    
+        // Check for special character
+        if (!specialCharRegex.test(password)) {
+          alert('Password must include at least one special character.');
+          return;
+        }
+    
+        // Check for uppercase letter
+        if (!uppercaseRegex.test(password)) {
+          alert('Password must include at least one uppercase letter.');
+          return;
+        }
+    
+        // Check for numeric value
+        if (!numericRegex.test(password)) {
+          alert('Password must include at least one numeric value.');
+          return;
+        }
+    
+        // Check if the passwords match
+        if (password === confirmPassword) {
+          alert('Passwords match! You can submit the form.');
+        } else {
+          alert('Passwords do not match. Please confirm your password.');
+        }
+      }
+    </script>
+    
+    
+
+</body>
+</html>

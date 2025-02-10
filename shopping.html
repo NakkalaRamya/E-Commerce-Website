@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop for Dresses</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0;
+          margin: 0;
+          padding: 0;
+      }
+
+      h1 {
+          text-align: center;
+          color: #333;
+      }
+
+      .dress {
+          background-color: #fff;
+          border: 1px solid #ccc;
+          margin: 20px;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          display: inline-block;
+          width: 300px;
+          text-align: center;
+      }
+
+      .dress img {
+          max-width: 100%;
+          height: auto;
+      }
+
+      .dress h2 {
+          margin: 10px 0;
+          font-size: 1.2rem;
+          color: #333;
+      }
+
+      .dress p {
+          color: #777;
+      }
+
+      .dress button {
+          background-color: #ff6600;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      .dress button:hover {
+          background-color: #ff4500;
+      }
+
+      #cart {
+          list-style: none;
+          padding: 0;
+      }
+
+      #cart li {
+          margin: 10px 0;
+      }
+
+      /* Media queries for responsiveness */
+      @media (max-width: 768px) {
+          .dress {
+              width: 100%;
+          }
+      }
+
+      .size{
+        height:30px;
+        width: 60px;
+        margin-bottom: 10px;
+        background-color: bisque;
+        color: black;
+        cursor: pointer;
+        font-size: 13px;
+        font-family: arial;
+        font-weight: bold;
+        }
+      
+      .quantity{
+        height:30px;
+        width: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        background-color: rgb(245, 170, 235);
+        color: black;
+        cursor: pointer;
+        font-size: 13px;
+        font-family: arial;
+        font-weight: bold;
+      }
+  </style>
+</head>
+<body>
+    <h1>Shop for Dresses</h1>
+
+    <div class="dress">
+        <img src="images/baby.jpg" alt="Cream frock">
+        <h2>Cream frock</h2>
+        <p>Price: Rs.450</p>
+        <div class="product-quantity-container">
+            <select id="sizeSelect" class="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="Extra large">XL</option>
+                <option value="double Extralarge">XXL</option>
+
+            </select>
+        </div>
+
+        <div class="product-quantity-container">
+            <select class="quantity">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+
+        <button onclick="addToCart('Cream frock', 450)">Add to Cart</button>
+        <button>Buy Now</button>
+    </div>
+
+    
+    <div class="dress">
+        <img src="images/womenss.jpg"  alt="Blue shirt">
+        <h2>Blue shirt</h2>
+        <p>Price: Rs.650</p>
+        <div class="product-quantity-container">
+            <select id="sizeSelect" class="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="Extra large">XL</option>
+                <option value="double Extralarge">XXL</option>
+
+            </select>
+        </div>
+
+        <div class="product-quantity-container">
+            <select class="quantity">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+
+        <button onclick="addToCart('Blue shirt', 650)">Add to Cart</button>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="dress">
+        <img src="images/old.jpeg" alt="Blue Coat">
+        <h2>Blue Coat</h2>
+        <p>Price: Rs.450</p>
+        <div class="product-quantity-container">
+            <select id="sizeSelect" class="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="Extra large">XL</option>
+                <option value="double Extralarge">XXL</option>
+
+            </select>
+        </div>
+
+        <div class="product-quantity-container">
+            <select class="quantity">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+
+        <button onclick="addToCart('Blue Coat', 450)">Add to Cart</button>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="dress">
+        <img src="images/earings.jpeg" alt="Earrings Gold" >
+        <h2>Earrings Gold</h2>
+        <p>Price: Rs.450</p>
+        
+
+        <div class="product-quantity-container">
+            <select class="quantity">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          
+        <button onclick="addToCart('Earrings Gold', 450)">Add to Cart</button>
+        <button>Buy Now</button>
+    </div>
+    <!-- Shopping Cart -->
+    <h2>Shopping Cart</h2>
+    <ul id="cart">
+        <!-- Cart items will be displayed here -->
+    </ul>
+
+    <script>
+        // JavaScript code for handling shopping cart functionality
+
+        // Initialize an empty shopping cart array
+        let shoppingCart = [];
+
+        // Function to add an item to the shopping cart
+        function addToCart(itemName, itemPrice) {
+            const item = {
+                name: itemName,
+                price: itemPrice
+            };
+            shoppingCart.push(item);
+
+            // Update the cart display
+            updateCartDisplay();
+        }
+
+        // Function to update the cart display
+        function updateCartDisplay() {
+            const cartList = document.getElementById('cart');
+            cartList.innerHTML = '';
+
+            let totalPrice = 0;
+
+            shoppingCart.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.name} - Rs.${item.price}`;
+                cartList.appendChild(listItem);
+
+                totalPrice += item.price;
+            });
+
+            // Display the total price
+            const totalItem = document.createElement('li');
+            totalItem.textContent = `Total: Rs.${totalPrice}`;
+            cartList.appendChild(totalItem);
+        }
+    </script>
+</body>
+</html>

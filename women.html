@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>women Products</title>
+    <style>
+    /* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the page header */
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style the product container */
+.infant-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style each product item */
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+/* Style the product image */
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the product title */
+.product-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Style the product price */
+.product-item p {
+    font-weight: bold;
+    color: #333;
+}
+
+/* CSS styles for navigation menu */
+.nav {
+  background-color: #333; /* Background color for the navigation bar */
+}
+
+.nav ul {
+  list-style-type: none; /* Remove the default list bullet */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display the list items in a row */
+}
+
+.nav li {
+  margin-right: 20px; /* Add space between menu items */
+}
+
+.nav a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #fff; /* Font color for links */
+  font-size: 22px; /* Font size for links */
+  padding-right: 5rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  align-items: center;
+}
+
+/* Style for link hover (optional) */
+.nav a:hover {
+  color: #ff5733; 
+}
+
+.product-item button {
+    margin-top: 10px; /* Add margin at the top of the button */
+}
+
+.addtocart{
+  height: 40px;
+  width: 100px;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-radius: 20px;
+  left: 15px;
+  right: 15px;
+  top:5px;
+  bottom: 5px;
+  border: none;
+  background-color: rgb(40, 161, 40);
+  font-family: Arial;
+  font-size: 15px;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.Buynow{
+  height: 40px;
+  width: 100px;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-radius: 20px;
+  left: 15px;
+  right: 15px;
+  top:5px;
+  bottom: 5px;
+  border: none;
+  background-color: palevioletred;
+  font-family: Arial;
+  font-size: 15px;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: 1s;
+ 
+}
+
+.size{
+  height:30px;
+  width: 60px;
+  margin-bottom: 10px;
+  background-color: bisque;
+  color: black;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: arial;
+  font-weight: bold;
+  }
+
+  .quantity{
+  height:30px;
+  width: 40px;
+  margin-bottom: 10px;
+  background-color: rgb(245, 170, 235);
+  color: black;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+  <header class="header">
+
+
+    <div class="nav">
+      <ul>
+        <a  href="#" >Dress</a>
+        <a  href="#" >Tees</a>
+        <a  href="#" >Tops</a>
+        <a  href="#" >jacket</a>
+        <a  href="#" >jeans</a>
+        <a  href="#" >Saree</a>
+        <a  href="#" >Skirts</a>
+        <a  href="#" >Kurthis</a>
+      </ul>
+    </div>
+
+    <h1>            </h1>
+    <div class="infant-product">
+        <div class="product-item">
+            <img src="images/womenss.jpg" alt="Product 1">
+            <h2>Shirt</h2>
+            <p>Price: 1100</p>
+
+            <div class="product-quantity-container">
+              <select id="sizeSelect" class="size">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                  <option value="Extra large">XL</option>
+                  <option value="double Extralarge">XXL</option>
+
+              </select>
+          </div>
+
+            <div class="product-quantity-container">
+              <select class="quantity">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+
+            <button onclick="addToCart('Product 1', 1100)" class="addtocart">Add to Cart</button>
+            <button type="submit" class="Buynow">Buy Now</button>
+        </div>
+            
+        
+        
+
+        <div class="product-item">
+          <img src="images/womens.jpg" alt="Product 2">
+          <h2>Red Dress</h2>
+          <p>Price: 1500</p>
+
+          <div class="product-quantity-container">
+            <select id="sizeSelect" class="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="Extra large">XL</option>
+                <option value="double Extralarge">XXL</option>
+
+            </select>
+        </div>
+
+          <div class="product-quantity-container">
+            <select class="quantity">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <button onclick="addToCart('Product 2', 1200)" class="addtocart" >Add to Cart</button>
+          <button type="submit" class="Buynow">Buy Now</button>
+      </div>
+
+      >
+
+    <div class="product-item">
+      <img src="images/jump.png" alt="Product 3">
+      <h2>Jeans suit</h2>
+      <p>Price: 900</p>
+
+      <div class="product-quantity-container">
+        <select id="sizeSelect" class="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="Extra large">XL</option>
+        <option value="double Extralarge">XXL</option>
+
+        </select>
+    </div>
+
+      <div class="product-quantity-container">
+        <select class="quantity">
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+      <button onclick="addToCart('Product 3', 1100)" class="addtocart">Add to Cart</button>
+      <button type="submit" class="Buynow">Buy Now</button>
+
+  </div>
+ 
+<div class="product-item">
+  <img src="images/womenn.jpg" alt="Product 3">
+  <h2>Tee</h2>
+  <p>Price: 1100</p>
+
+  <div class="product-quantity-container">
+    <select id="sizeSelect" class="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="Extra large">XL</option>
+        <option value="double Extralarge">XXL</option>
+
+    </select>
+</div>
+
+  <div class="product-quantity-container">
+    <select class="quantity">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  </div>
+
+  <button onclick="addToCart('Product 3', 1100)" class="addtocart">Add to Cart</button>
+  <button type="submit" class="Buynow">Buy Now</button>
+</div>
+
+<div class="product-item">
+  <img src="images/yellow.png" alt="Product 3">
+  <h2>Yellow Kurthi</h2>
+  <p>Price: 1300</p>
+
+  <div class="product-quantity-container">
+    <select id="sizeSelect" class="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="Extra large">XL</option>
+        <option value="double Extralarge">XXL</option>
+
+    </select>
+</div>
+
+  <div class="product-quantity-container">
+    <select class="quantity">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  </div>
+
+  <button onclick="addToCart('Product 3', 1100)" class="addtocart">Add to Cart</button>
+  <button type="submit" class="Buynow">Buy Now</button>
+</div>
+
+<div class="product-item">
+  <img src="images/redd.jpg" alt="Product 3">
+  <h2>Frock</h2>
+  <p>Price: 1250</p>
+
+  <div class="product-quantity-container">
+    <select id="sizeSelect" class="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="Extra large">XL</option>
+        <option value="double Extralarge">XXL</option>
+
+    </select>
+</div>
+
+  <div class="product-quantity-container">
+    <select class="quantity">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  </div>
+
+  <button onclick="addToCart('Product 3', 1100)" class="addtocart">Add to Cart</button>
+  <button type="submit" class="Buynow">Buy Now</button>
+</div>
+    </div>
+
+    <script>
+     
+    </script>
+</body>
+</html>
